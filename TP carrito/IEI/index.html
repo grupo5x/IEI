@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>        
+    
+    <header class="header">
+        <div class="menu-hamburguesa" onclick="toggleMenu()">☰</div>
+        <nav id="menu" class="menu">
+            <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="tyc.html">Términos y Condiciones</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h2>PRODUCTOS</h2>
+
+
+
+    <div class="mycontainer">
+
+    <div class="card">
+        <h3>Camiseta</h3>
+        <img src="./img/Camiseta_Tercer_Uniforme_Authentic_Boca_Juniors_24-25_Azul_IP6073_01_laydown.avif" class="imges"/>
+        <p>$500</p>
+        <button class="btn-1" id="btproducto1">Agregar +1</button>
+    </div>
+    <div class="card">
+        <h3>Pantalones</h3>
+        <img src="./img/images.jpg" class="imges"/>
+        <p>$1000</p>
+        <button class="btn-1" id="btproducto2">Agregar +1</button>
+    </div>
+    <div class="card">
+        <h3>Zapatos</h3>
+        <img src="./img/images (1).jpg" class="imges"/>
+        <p>$1500</p>
+        <button class="btn-1" id="btproducto3">Agregar +1</button>
+    </div>
+</div>
+<hr/>
+<div class="card-cart">
+<ul>
+    <div id="carrito"></div>
+</ul>
+
+<h2>Su Compra: <strong id="totalcarrito"></strong></h2>
+<button class="btn-1" id="abonar">ABONAR</button>
+<button class="btn-1" id="cancelar">CANCELAR</button>
+</div>
+    
+<script>
+    // funcion para el menu
+    function toggleMenu() {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("menu-activo");
+    }
+</script>
+
+    <script src="index.js"></script>
+</body>
+</html>

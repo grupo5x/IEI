@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+    <header class="header">
+        <div class="menu-hamburguesa" onclick="toggleMenu()">☰</div>
+        <nav id="menu" class="menu">
+            <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="tyc.html">Términos y Condiciones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <h2>Términos y Condiciones</h2>
+
+    <div class="mycontainer">
+    <div class="card">
+    
+    <p>
+        Al realizar una compra en nuestro sitio, aceptas nuestras políticas de pago, envío y devolución.
+        Los productos adquiridos no son reembolsables, salvo que presenten defectos de fabricación. 
+        Por favor, asegúrate de revisar toda la información antes de completar tu pedido.
+    </p>
+    </div>
+    </div>
+    <footer>
+        <a href="index.html">Volver a la página principal</a>
+    </footer>
+
+    <script>
+        // funcion para el menu
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("menu-activo");
+        }
+    </script>
+
+
+</body>
+</html>

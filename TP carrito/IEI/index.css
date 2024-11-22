@@ -1,0 +1,134 @@
+body{
+    text-align: center;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.mycontainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin: 15px;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 11px 10px 27px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 11px 10px 27px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 11px 10px 27px 0px rgba(0,0,0,0.75);
+color: #262222;
+}
+
+.imges{
+    width: 150px;
+}
+
+.btn-1{
+    background-color: rgb(149, 66, 228);
+    color: aliceblue;
+    padding: 15px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-2{
+    background-color: red;
+    padding: 15px;
+    border: 0;
+    color: aliceblue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card-cart{
+    background-color: rgb(231, 231, 231);
+    color: #262222;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 11px 10px 27px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 11px 10px 27px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 11px 10px 27px 0px rgba(0,0,0,0.75);
+}
+
+
+
+ul{
+    list-style:none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: block;
+}
+
+li{
+    font-size: larger;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 0px 0px 0px 5px;
+    width: fit-content;
+    margin: 0 auto;
+    border-color: blueviolet;
+    margin-bottom: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start; /* Alinea todo el contenido del header hacia la izquierda */
+    align-items: center;
+    padding: 10px;
+}
+
+/* Estilos generales del menú hamburguesa */
+.menu-hamburguesa {
+    font-size: 30px;
+    cursor: pointer;
+    display: block;
+    margin-left: 10px; /* Agrega espacio a la izquierda */
+}
+
+/* Estilos del menú */
+.menu {
+    display: none; /* Ocultar el menú por defecto */
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 50px;
+    left: 10px; /* Despliegue del menú a la izquierda */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.menu-activo {
+    display: flex; /* Mostrar el menú cuando está activo */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
+
+/* Estilo para los enlaces del menú */
+.menu li a {
+    text-decoration: none;
+    color: #ffffff; /* Letras blancas */
+    background-color: #953ae8; /* Fondo morado */
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: block;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+/* Efecto al pasar el cursor sobre los enlaces del menú */
+.menu li a:hover {
+    background-color: #7a2cc0; /* Un tono más oscuro de morado al hacer hover */
+}
